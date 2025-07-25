@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.20.2",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "fd-boardroom-bookings",
+    "libraryId": "cafa31bb-a661-40a1-95b7-adfc8bdb31a8",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "fd-boardroom-bookings",
+    "solutionShortDescription": "fd-boardroom-bookings description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "adaptiveCardExtension",
+    "aceTemplateType": "PrimaryText"
+  }
+}

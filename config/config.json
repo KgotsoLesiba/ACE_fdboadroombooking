@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "fd-boardroom-bookings-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/fdBoardroomBookings/FdBoardroomBookingsAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/fdBoardroomBookings/FdBoardroomBookingsAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FdBoardroomBookingsAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/fdBoardroomBookings/loc/{locale}.js"
+  }
+}

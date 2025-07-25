@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "fd-boardroom-bookings-client-side-solution",
+    "id": "cafa31bb-a661-40a1-95b7-adfc8bdb31a8",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "fd-boardroom-bookings description"
+      },
+      "longDescription": {
+        "default": "fd-boardroom-bookings description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "fd-boardroom-bookings Feature",
+        "description": "The feature that activates elements of the fd-boardroom-bookings solution.",
+        "id": "fe27b1ee-f4be-4ddd-9054-100b5488a239",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "SharePoint",
+        "scope": "AllSites.FullControl"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/fd-boardroom-bookings.sppkg"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "body": [
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "bleed": true,
+      "separator": true,
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                { "type": "TextBlock", "text": "Meeting Title", "wrap": true },
+                { "type": "Input.Text", "placeholder": "Enter title", "id": "meetingTitle" },
+
+                { "type": "TextBlock", "text": "Start Date", "wrap": true },
+                { "type": "Input.Date", "id": "startDate" },
+
+                { "type": "TextBlock", "text": "Start Time", "wrap": true },
+                { "type": "Input.Time", "id": "startTime" },
+
+                { "type": "TextBlock", "text": "End Date", "wrap": true },
+                { "type": "Input.Date", "id": "endDate" },
+
+                { "type": "TextBlock", "text": "End Time", "wrap": true },
+                { "type": "Input.Time", "id": "endTime" },
+
+                { "type": "TextBlock", "text": "Office Location", "wrap": true },
+                {
+                  "type": "Input.ChoiceSet",
+                  "id": "officeLocation",
+                  "placeholder": "Select Office Location",
+                  "choices": [
+                    { "title": "JHB", "value": "JHB" },
+                    { "title": "KZN", "value": "KZN" },
+                    { "title": "CPT", "value": "CPT" }
+                  ]
+                },
+
+                { "type": "TextBlock", "text": "Room Name", "wrap": true },
+                {
+                  "type": "Input.ChoiceSet",
+                  "id": "roomName",
+                  "placeholder": "Choose a room",
+                  "choices": [
+                    { "title": "Australia", "value": "Australia" },
+                    { "title": "Botswana", "value": "Botswana" },
+                    { "title": "Cuba", "value": "Cuba" },
+                    { "title": "Democratic Republic of the Congo", "value": "Democratic Republic of the Congo" },
+                    { "title": "Ethiopia", "value": "Ethiopia" },
+                    { "title": "South Africa", "value": "South Africa" }
+                  ]
+                },
+
+                {
+                  "type": "ActionSet",
+                  "actions": [
+                    {
+                      "type": "Action.Submit",
+                      "title": "Confirm Booking",
+                      "data": {
+                        "action": "submitBooking"
+                      }
+                    }
+                  ],
+                  "spacing": "Medium",
+                  "separator": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
